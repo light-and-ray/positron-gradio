@@ -173,7 +173,7 @@ requires = [
 [tool.briefcase.app.positron-gradio.android]
 requires = [
     "toga-android~=0.5.0",
-    "gradio==5.5.0",
+    "gradio",
     "cffi==1.17.1",
 ]
 
