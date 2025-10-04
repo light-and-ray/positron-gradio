@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.25
+Name: positron-gradio
+Formal-Name: Positron Gradio
+App-ID: com.example.positron-gradio
+Version: 0.0.1
+Home-page: https://example.com/positron-gradio
+Download-URL: https://example.com/positron-gradio
+Author: Andray
+Author-email: light.and.ray@gmail.com
+Summary: Gradio app inside positron
