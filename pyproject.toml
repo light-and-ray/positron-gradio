@@ -16,14 +16,9 @@ long_description = """More details about the app should go here.
 sources = [
     "src/positron_gradio",
 ]
-test_sources = [
-    "tests",
-]
 
 requires = [
-]
-test_requires = [
-    "pytest",
+    "maturin",
 ]
 
 [tool.briefcase.app.positron-gradio.macOS]
@@ -31,6 +26,7 @@ universal_build = true
 requires = [
     "toga-cocoa~=0.5.0",
     "std-nslog~=1.0.3",
+    "gradio",
 ]
 
 [tool.briefcase.app.positron-gradio.linux]
@@ -40,6 +36,7 @@ requires = [
     # isn't available on Debian 12/Ubuntu 22.04. If you don't need to support those (or
     # older) releases, you can remove this version pin. See beeware/toga#3143.
     "pygobject < 3.52.1",
+    "gradio",
 ]
 
 [tool.briefcase.app.positron-gradio.linux.system.debian]
@@ -162,6 +159,7 @@ flatpak_sdk = "org.gnome.Sdk"
 [tool.briefcase.app.positron-gradio.windows]
 requires = [
     "toga-winforms~=0.5.0",
+    "gradio",
 ]
 
 # Mobile deployments
@@ -169,11 +167,14 @@ requires = [
 requires = [
     "toga-iOS~=0.5.0",
     "std-nslog~=1.0.3",
+    "gradio",
 ]
 
 [tool.briefcase.app.positron-gradio.android]
 requires = [
     "toga-android~=0.5.0",
+    "gradio==5.5.0",
+    "cffi==1.17.1",
 ]
 
 base_theme = "Theme.MaterialComponents.Light.DarkActionBar"
@@ -190,6 +191,7 @@ build_gradle_dependencies = [
 [tool.briefcase.app.positron-gradio.web]
 requires = [
     "toga-web~=0.5.0",
+    "gradio",
 ]
 style_framework = "Shoelace v2.3"
 
